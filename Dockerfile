@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy requirements.txt to the working directory
-COPY requirements.txt ./
+COPY hello-world/app/requirements.txt ./
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --upgrade Flask
 
 # Copy the entire app directory into /app in the container
-COPY app.py /app/
+COPY hello-world/app/app.py /app/
 
 # Expose port 8080 for the app
 EXPOSE 8080
