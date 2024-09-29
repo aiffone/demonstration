@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --upgrade Flask
 
 # Copy the entire app directory into /app in the container
-COPY app/app.py /app/
+COPY app.py /app/
 
 # Expose port 8080 for the app
 EXPOSE 8080
