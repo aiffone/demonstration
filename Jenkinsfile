@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PROJECT_ID = 'your-gcp-project-id'  // Replace with your GCP Project ID
+        PROJECT_ID = 'infra1-430721'  // Replace with your GCP Project ID
         REGION = 'us-central1'
         CLUSTER_NAME = 'infra1-gke-cluster'
         SERVICE_ACCOUNT = 'jenkins@infra1-430721.iam.gserviceaccount.com'  // Replace with your service account if needed
