@@ -32,7 +32,6 @@ pipeline {
                         echo "Current directory contents:"
                         ls -la
                         pwd
-                        rm -r -f .
                         helm upgrade --install hello-world-jenkins-daemon helm-chart \
                         --namespace daemon \
                         --set image.repository=europe-west1-docker.pkg.dev/infra1-430721/hello/hello-world \
