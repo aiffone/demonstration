@@ -50,7 +50,7 @@ pipeline {
                     echo "Installing Helm and deploying the application..."
                     sh """
                         curl -s https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
-                        helm upgrade --install hello-world-daemon ./helm-chart \
+                        helm upgrade --install hello-world-daemon ./hello-world/helm-chart \
                         --set image.repository=gcr.io/${env.PROJECT_ID}/hello-world \
                         --set image.tag=latest \
                         --namespace daemon \
